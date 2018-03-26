@@ -5,7 +5,7 @@
 # Base Image:       R-base:3.4.0
 #################################################################
 #R image to be the base in order to build our new image
-FROM r-base:3.4.0
+FROM r-base:3.3.3
 
 #Maintainer and author
 MAINTAINER Magdalena Arnal <marnal@imim.es>
