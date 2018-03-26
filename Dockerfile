@@ -13,7 +13,6 @@ MAINTAINER Magdalena Arnal <marnal@imim.es>
 #Install Ubuntu extensions in order to run r
 #Bug detectat!: https://stat.ethz.ch/pipermail/r-sig-debian/2017-March/002660.html
 RUN apt-get update && apt-get install -y \
-    r-cran-xml \
     libssl-dev \
     libcurl4-openssl-dev \
     libxml2-dev \
