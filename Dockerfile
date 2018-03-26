@@ -28,6 +28,6 @@ ENV PATH=pkg-config:$PATH
 RUN Rscript -e 'install.packages(c("acepack","Rcpp","RcppArmadillo","statmod","Hmisc","plotrix","stringr","locfit"))'
 RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(pkgs=c("BiocGenerics","biomaRt","Rsamtools","geneplotter","genefilter"));'
 RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(pkgs=c("BiocParallel","Biobase","SummarizedExperiment","IRanges","GenomicRanges","DESeq2","AnnotationDbi","S4Vectors"));'
-RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(pkgs=c("GenomicFeatures","pasilla","parathyroidSE","BiocStyle"));'
+RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(pkgs=c("GenomicFeatures","pasilla","parathyroidSE","BiocStyle","S4Vectors"));'
 RUN Rscript -e 'install.packages(c("hwriter","stringr", "statmod","RColorBrewer","knitr"))'
-RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite("DEXSeq");'
+RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(pkgs=c("DEXSeq","JunctionSeq"));'
